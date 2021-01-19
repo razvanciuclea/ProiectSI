@@ -1,23 +1,3 @@
-/*
-
-
-L4- Interconectare PC si XMC4700 Relax kit.
-
-Program afisare continua date A/D in virgula flota pe Terminal.
-
-Intefata seriala peste DEBUG utilizeaza  P1.5 pentru Tx si P1.4 pentru Rx.
-
-Convertorul A/D este configurat sa genereze intrupere la sfarsit
-conversie, rutina de tratare fiind denumita adch.
-Timpul de conversiei pe 12 biti este de aprox 1,5 microsecunde.
-La intrarea P14.9 este conectat cursorul unui potentiometru conectat intre 3,3V si GND.
-In acest mod pot fi generate tensiuni specifice unor senzori cu iesiri analogice.
-
-! In etapa de generare proiect se vor activa optiunile pentru virgula flotanta a
-functiei printf - altfel nu e posibila afisare, desi nu sunt erori la compilare.
-
-*/
-
 #include <DAVE.h>
 #include<stdio.h>
 
